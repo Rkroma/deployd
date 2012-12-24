@@ -1,0 +1,77 @@
+{
+	"type": "Collection",
+	"properties": {
+		"title": {
+			"name": "title",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "title",
+			"order": 0
+		},
+		"description": {
+			"name": "description",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "description",
+			"order": 1
+		},
+		"category": {
+			"name": "category",
+			"type": "array",
+			"typeLabel": "array",
+			"required": false,
+			"id": "category",
+			"order": 2
+		},
+		"tags": {
+			"name": "tags",
+			"type": "array",
+			"typeLabel": "array",
+			"required": false,
+			"id": "tags",
+			"order": 3
+		},
+		"documentType": {
+			"name": "documentType",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "documentType",
+			"order": 4
+		},
+		"fileSize": {
+			"name": "fileSize",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "fileSize",
+			"order": 5
+		},
+		"published": {
+			"name": "published",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "published",
+			"order": 6
+		},
+		"dateCreated": {
+			"name": "dateCreated",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "dateCreated",
+			"order": 7
+		},
+		"dateUpdated": {
+			"name": "dateUpdated",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "dateUpdated",
+			"order": 8
+		}
+	}
+}

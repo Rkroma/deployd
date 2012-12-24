@@ -1,0 +1,11 @@
+{
+	"type": "Email",
+	"host": "smtp.gmail.com",
+	"port": "45",
+	"ssl": true,
+	"username": "",
+	"password": "",
+	"defaultFromAddress": "",
+	"internalOnly": false,
+	"productionOnly": false
+}

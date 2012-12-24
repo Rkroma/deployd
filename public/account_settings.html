@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Account Settings</title>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript" src="dpd.js"></script>
+		<script type="text/javascript" src="/js/custom.js"></script>
+		<link rel="stylesheet" type="text/css" href="/css/style.css" />
+		<!--<script type="text/javascript">
+		var uId = '';
+		var old_pass = '';
+		  dpd.users.me(function(me) {
+			uId = me.id;
+			old_pass = me.password;
+			console.log(me);
+			console.log(me.password);
+		  });
+		</script>-->
+	</head>
+	<body>
+		
+		<div class="container">
+			<label style="font-size:40px; display: block; text-align: center; line-height: 150%;">Reset Password</label>
+			<span id="error_msg"></span>
+			<form id="reset_form">
+			  <label for="old_password">Old Password:</label>
+			  <input type="text" id="old_password" />
+			  <label for="new_password">Password:</label>
+			  <input type="password" id="new_password" />
+			  <label for="confirm_password">Confirm Password:</label>
+			  <input type="password" id="confirm_password" /><br />
+			  <button type="submit" class="btn btn-primary">Save</button>
+			</form>
+		</div>
+  </body>
+</html>

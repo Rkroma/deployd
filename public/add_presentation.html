@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+  
+  <head>
+    <title>Add presentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <script src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="dpd.js"></script>
+	<script type="text/javascript" src="/js/custom.js"></script>
+	<script type="text/javascript">
+		dpd.categories.get(function (result, err) {
+		  if(err) return console.log(err);
+		  console.log(result);
+		  var dta = '';
+		  for (i=0;i<result.length;i++)
+		  {
+			dta += '<option>'+result[i].title+'</option>';
+          }
+		  $('#cat').html(dta);
+		  $('#sub_cat').html(dta);
+		});
+	</script>
+  </head>
+  
+  <body>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="#">Administration Finn sales app</a>
+          <div class="navbar-content">
+            <ul class="nav">
+              <li>
+                <a href="presentations.html">Home</a> 
+              </li>
+              <li>
+                <a href="#">My Account</a> 
+              </li>
+              <li>
+                <a href="support.html">Support</a> 
+              </li>
+            </ul>
+			<ul class="nav" style="float:right;">
+			  <li>
+				 <a href="#" id="logout-btn">Logout</a>
+			  </li>
+			</ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <ul class="nav  nav-pills nav-stacked">
+            <li>
+              <a href="users.html">Users</a> 
+            </li>
+            <li>
+              <a href="presentations.html">Presentations</a> 
+            </li>
+            <li>
+              <a href="categories.html">Categories</a> 
+            </li>
+            <li>
+              <a href="tags.html">Tags</a> 
+            </li>
+            <li>
+              <a href="settings.html">Settings</a> 
+            </li>
+          </ul>
+          <div class="well">
+            <p>
+              <b>Tip:</b> Make sure your files are not bigger &nbsp;then 100mb, because
+              people can be downloading it on 3g networks.</p>
+          </div>
+        </div>
+        <div class="span9">
+          <ul class="breadcrumb">
+            <li>
+              <a href="#">Home</a>
+              <span class="divider">/</span>
+            </li>
+            <li>
+              <a href="#">Presentations</a>
+              <span class="divider">/</span>
+            </li>
+            <li class="active">Add presentation</li>
+          </ul>
+          <div class="row-fluid">
+            <div class="span">
+              <h2>Add presentation</h2>
+              <p>A paragraph of details about the heading and its related content so that
+                you can have an example of how this should work.</p>
+              <form class="form-vertical" id="add_presentation">
+                <div class="control-group">
+                  <label class="control-label">Title</label>
+                  <div class="controls">
+                    <input type="text" class="input-large" id="title"> 
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label">Description</label>
+                  <div class="controls">
+                    <textarea id="desc"></textarea>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label">Category</label>
+                  <div class="controls">
+                    <select id="cat">
+                    </select>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label">Sub category</label>
+                  <div class="controls">
+                    <select id="sub_cat">
+                    </select>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label">Keynote file</label>
+                  <div class="controls">
+                    <input type="text" class="input-large"> 
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label">Powerpoint file
+                    <br> 
+                  </label>
+                  <div class="controls">
+                    <input type="text" class="input-large"> 
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label">Pdf file</label>
+                  <div class="controls">
+                    <input type="text" class="input-large"> 
+                  </div>
+                </div>
+                <label class="checkbox">
+                  <input type="checkbox" id="published">
+                  <span>Published</span>
+                </label>
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-primary"><span class="btn-label">Create presentation</span></button>
+                  <a class="btn" href="#"><span class="btn-label">Cancel</span></a> 
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+
+</html>
